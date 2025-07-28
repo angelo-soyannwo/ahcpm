@@ -1,57 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Metadata (data about data) goes inbetween HTML head tags-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Happy Place Christian Ministries</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--box icons link-->
+
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
 </head>
 <body>
-    <div class="site-header">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <!-- <i class="fa-solid fa-a">F</i> -->
-                    <div class="logo-text">A Happy Place Christian Ministries</div>
-                </div>
-                <nav>
-                    <!-- <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div> -->
-                    <div class="bx bx-menu" id="menu-icon"></div>
+    <!-- Navbar -->
+     <nav>
+        <div class="left">
+            <a href="/">A Happy Place Christian Ministries</a>
+        </div>
 
-                    <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Gallery</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                <div>
-                    <p class="quote">
-                        “Go into all the world and preach the Good News to everyone. <br>
-                        Anyone who believes and is baptized will be saved. <br>
-                        But anyone who refuses to believe will be condemned".<br>
-                        <h5 class="verse">- Mark 16 vs 15-16, New Living Translation.</h5>
-                    </p>
-                </div>
+        <div class="right">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener no-referrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+            <a href="mailto:iyabosoyannwo@yahoo.com" >
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
 
+     </nav>
+
+     <main>
+        <!-- Section 1: Hero-->
+        <section class="hero-section">
+            <div class="text">
+                <h2>
+                    Welcome
+                </h2>
+                <p>
+                “Go into all the world and preach the Good News to everyone. <br>
+                Anyone who believes and is baptized will be saved. <br>
+                But anyone who refuses to believe will be condemned".<br>
+                </p>
+                <h5>
+                - Mark 16 verses 15:16, New Living Translation.
+                </h5>
+
+                <div class="links">
+                    <a href="#gallery">
+                        <i class="fa-solid fa-images"></i>
+                        <span>Gallery</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+
+                </div>
             </div>
 
-        </div>
-    </div>
+            <div class="headshot">
+                <img src="images/blake.jpeg.webp" alt="image">
+            </div>
+        </section>
+
+        <!-- Section 2: Gallery-->
+        <section id="gallery" class="gallery-section">
+
+            <h2>Gallery</h2>
+
+            <div class="gallery-grid">
+                <img src="images/gallery/red.webp" alt="Gallery image 1">
+                <img src="images/gallery/green.webp" alt="Gallery image 2">
+                <img src="images/gallery/blue.webp" alt="Gallery image 3">
+            </div>
+
+        </section>
+
+
+
+        <!-- Section 3: Contact-->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <!-- <div class="text">
+                    <h3>Please feel free to send me any inquiries</h3>
+                </div> -->
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button>Send Email</button>
+                </form>
+            </div>
+        </section>
+
+     </main>
+
+
+    
 </body>
 </html>
