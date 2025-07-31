@@ -33,7 +33,7 @@
                 <i class="fa-brands fa-linkedin"></i>
                 <span>Linkedin</span>
             </a>
-            <a href="mailto:iyabosoyannwo@yahoo.com" >
+            <a href="mailto:ahappyplacechristianministries@gmail.com" >
                 <i class="fa-solid fa-envelope"></i>
                 <span>Email</span>
             </a>
@@ -87,6 +87,13 @@
                 <img src="images/gallery/blue.webp" alt="Gallery image 3">
             </div>
 
+            <div class="links">
+                <a href="gallery.html">
+                    <i class="fa-solid fa-images"></i>
+                    <span>View More</span>
+                </a>
+            </div>
+
         </section>
 
 
@@ -100,22 +107,50 @@
                     <h3>Please feel free to send me any inquiries</h3>
                 </div> -->
 
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
+                <form action="https://formspree.io/f/mqalbblk" method="POST" target="_blank">
+                    
+                    <!-- <label for="name">Name</label>
+                    <input for="name" type="text" id="name">
+                    
 
                     <label for="email">Email</label>
-                    <input type="text" id="email">
+                    <input for="email" type="email" id="email">
+                    
+
+
+                    <label for="subject">Subject</label>
+                   <input type="subject" id="subject">
+                    
+
+                    <input type="hidden" name="subject" id="email-subject" value="{{ subject }}">
+
 
                     <label for="message">Message</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
+                    <textarea id="message" cols="30" rows="10"></textarea> -->
 
-                    <button>Send Email</button>
+                     <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+                    
+                    <button type="submit" >Send Email</button>
                 </form>
             </div>
         </section>
 
      </main>
+
+      <!-- custom js link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src=js/script.js> </script>
 
 
     
