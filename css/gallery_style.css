@@ -89,13 +89,22 @@ nav .right a span {
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .gallery-grid img {
     flex: 1;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid .img-2 {
+    flex: 1;
+    /* width: auto; */
+    height: 400;
+    object-fit: contain;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
