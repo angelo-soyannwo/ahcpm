@@ -100,14 +100,26 @@ nav .right a span {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-grid .img-2 {
+.gallery-grid .img-1 {
     flex: 1;
     /* width: auto; */
-    height: 400;
+    height: 400px;
     object-fit: contain;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.gallery-grid .img-2 {
+    flex: 1;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-caption p{
+        font-size: 20px;
+    }
 
 .gallery-grid img:hover {
     transform: scale(1.02);
@@ -138,11 +150,35 @@ nav .right a span {
         width: 100%;
         height: auto; /* so image isn't too tall in single-column mode */
     }
+
+    .gallery-grid .img-1{
+        width: 100%;
+        height: auto;
+    }
+
+    .image-caption{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .image-caption p{
+        font-size: 27px;
+    }
+
+    .videos iframe{
+        max-width: 90%;
+    }
+
+    .videos{
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 750px) {
     #gallery {
-        padding: 0 20px;
+        padding: 0 25px;
     }
 }
 

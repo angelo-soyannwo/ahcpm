@@ -58,6 +58,13 @@
                 </h5>
 
                 <div class="links">
+
+                    <a href="#about">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>About</span>
+                    </a>
+
+
                     <a href="gallery.html">
                         <i class="fa-solid fa-images"></i>
                         <span>Gallery</span>
@@ -76,7 +83,46 @@
             </div>
         </section>
 
-        <!-- Section 2: Gallery-->
+        <!-- Section 2: About-->
+        <section id="about" class="about-section">
+
+            <h2>About</h2>
+
+            <div class="about-description">
+
+            
+                <div class="headshot">
+                    <img src="images/profile-pic.webp" alt="profile-image">
+                </div>
+
+                <div class="about-text">
+                    <p>
+                    Ayo Iyabo Soyannwo is the founder of A Happy Place Christian Ministries, 
+                    with a mandate to win souls by bringing people to the knowledge that 
+                    Jesus Christ is real and alive today - the ONLY WAY INTO HEAVEN. 
+                    Moreover, that the Rapture is really going to happen and we must be ready. 
+                    <!-- - after having had an encounter with the Lord Jesus when she was 
+                    taken up into heaven the same way as the Rapture is described in the Bible. -->
+                    </p> 
+                </div>
+            
+            </div>
+
+
+            
+            
+            
+
+            <!-- <div class="links">
+                <a href="gallery.html">
+                    <i class="fa-solid fa-images"></i>
+                    <span>View More</span>
+                </a>
+            </div> -->
+
+        </section>
+
+        <!-- Section 3: Gallery-->
         <section id="gallery" class="gallery-section">
 
             <h2>Gallery</h2>
@@ -97,50 +143,32 @@
 
 
 
-        <!-- Section 3: Contact-->
+        <!-- Section 4: Contact-->
         <section id="contact" class="contact-section">
             <h2>Contact</h2>
 
+            <p>
+            If you would like to book minister Iyabo Soyannwo for Speaking engagements, please send a message.
+            </p>            
+
             <div class="group">
-                <!-- <div class="text">
-                    <h3>Please feel free to send me any inquiries</h3>
-                </div> -->
 
                 <form action="https://formspree.io/f/mqalbblk" method="POST" target="_blank">
-                    
-                    <!-- <label for="name">Name</label>
-                    <input for="name" type="text" id="name">
-                    
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email</label>
-                    <input for="email" type="email" id="email">
-                    
-
+                    <input type="email" id="email" name="email" required>
 
                     <label for="subject">Subject</label>
-                   <input type="subject" id="subject">
-                    
-
-                    <input type="hidden" name="subject" id="email-subject" value="{{ subject }}">
-
+                    <input type="text" id="subject" name="subject" required>
 
                     <label for="message">Message</label>
-                    <textarea id="message" cols="30" rows="10"></textarea> -->
-
-                     <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+                    <textarea id="message" name="message" cols="30" rows="10" required></textarea>
                     
                     <button type="submit" >Send Email</button>
                 </form>
+
             </div>
         </section>
 

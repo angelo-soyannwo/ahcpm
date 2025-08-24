@@ -109,7 +109,77 @@ nav .right a span {
     font-size: 45px;
 }
 
-/* Section 2: Gallery */
+
+
+
+
+
+
+
+/* Section 2: About */
+.about-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.about-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    flex: 5;
+}
+
+.about-section p {
+    font-size: 30px;
+}
+
+.about-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: left;
+}
+
+.about-section .headshot img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+@media (max-width: 900px) {
+
+    .about-section .headshot img {
+    margin-bottom: 45px;
+    margin-right: 0px;
+    }
+
+    .about-description {
+        flex-direction: column;
+    }
+
+    .about-section p {
+        font-size: 22px;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 750px) {
+    #about {
+        padding: 0 20px;
+    }
+}
+
+
+
+/* Section 3: Gallery */
 .gallery-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -118,20 +188,6 @@ nav .right a span {
 .gallery-section h2 {
     font-size: 35px;
 }
-
-/* .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.gallery-grid img {
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-} */
 
 /* Flex row with 3 equal-height images */
 .gallery-grid {
@@ -237,6 +293,12 @@ nav .right a span {
 
 .contact-section .group form button:hover{
     filter: brightness(0.9);
+}
+
+.contact-section p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 850px) {
